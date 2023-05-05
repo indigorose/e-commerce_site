@@ -17,14 +17,14 @@
 				<!-- This could be an image of your logo -->
 				Your Logo.
 			</a>
-			<nav id="navbar">
-				<ul class="nav row">
+			<nav id="nav">
+				<ul id='navbar' class="nav row">
 					<li class="nav__item">
 						<a href="index.html" class="nav__item--link active"
 							>Home</a
 						>
 					</li>
-					<li class="nav__item active">
+					<li class="nav__item">
 						<a href="shop.html" class="nav__item--link">Shop</a>
 					</li>
 					<li class="nav__item">
@@ -38,13 +38,20 @@
 							>Contact</a
 						>
 					</li>
-					<li class="nav__item">
+					<li id="lg-bag" class="nav__item">
 						<a href="shop" class="nav__item--link"
 							><i class="fa-solid fa-bag-shopping"></i
 						></a>
 					</li>
+                    <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
 				</ul>
 			</nav>
+			<div id="mobile__menu" class="mobile__menu--toggle">
+				<a href="shop" class="mobile--item"
+					><i class="fa-solid fa-bag-shopping"></i
+				></a>
+				<i id="bar" class="fa-solid fa-bars mobile--item "></i>
+			</div>
 		</header>
 		<section id="hero">
 			<h4>Trade-in-offer</h4>
@@ -54,7 +61,7 @@
 			<a href="shop.html" class="hero__btn">Shop Now</a>
 		</section>
 		<section id="feature">
-			<div class="container section-p1 row">
+			<div class="container feature section-p1 row">
 				<div class="card">
 					<img src="./images/features/download.png" alt="" />
 					<h6 class="card--text">Free Shipping</h6>
@@ -82,7 +89,7 @@
 			</div>
 		</section>
 		<section id="product-1" class="section-p1">
-			<h2>Featured Products</h2>
+			<h2 class="product--title">Featured Products</h2>
 			<p>Summer Collection New Modern Designs</p>
 			<div class="container">
 				<div class="product__card">
@@ -448,6 +455,134 @@
 				<a href="#" class="banner__card--btn">Learn More</a>
 			</div>
 		</section>
+		<section id="banner-3" class="banner__box3">
+			<div class="banner__box--card card--img1">
+				<h2>Seasonal Sale</h2>
+				<h3>Winter Collection</h3>
+			</div>
+			<div class="banner__box--card card--img2">
+				<h2>Seasonal Sale</h2>
+				<h3>Winter Collection</h3>
+			</div>
+			<div class="banner__box--card card--img3">
+				<h2>Seasonal Sale</h2>
+				<h3>Winter Collection</h3>
+			</div>
+		</section>
+		<section
+			id="newsletter"
+			class="newsletter__section section-p1 section-m1"
+		>
+			<div class="newsletter--text">
+				<h4>Sign Up For Newsletters</h4>
+				<p>
+					Get E-main updates about our latest shop and
+					<span class="text--accent">special offers.</span>
+				</p>
+			</div>
+			<div class="newsletter__form">
+				<input
+					type="text"
+					placeholder="Your email address"
+					class="newsletter__input"
+				/>
+				<a href="#" class="newsletter__btn">Sign Up</a>
+			</div>
+		</section>
+		<footer id="footer" class="section-p1">
+			<div class="footer__container">
+				<div class="footer__col-1">
+					<a href="#" class="logo">
+						<!-- This could be an image of your logo -->
+						Your Logo.
+					</a>
+					<h4>Contact</h4>
+					<p>
+						<strong class="address">Address:</strong> 562 Wellington
+						Road, Street 32, San Francisco
+					</p>
+					<p>
+						<strong class="address">Phone:</strong> +01 1234 555
+						/(+09) 05 9876 6541
+					</p>
+					<p>
+						<strong class="address">Hours:</strong> 10:00 - 19:00.
+						Mon - Sat
+					</p>
+					<div class="footer__icons">
+						<h4>Follow Us</h4>
+						<div class="footer--icons">
+							<a href="http://"
+								><i
+									class="fa-brands fa-facebook-f footer--icon"
+								></i
+							></a>
+							<a href="http://"
+								><i
+									class="fa-brands fa-twitter footer--icon"
+								></i
+							></a>
+							<a href="http://"
+								><i
+									class="fa-brands fa-instagram footer--icon"
+								></i
+							></a>
+							<a href="http://"
+								><i
+									class="fa-brands fa-pinterest-p footer--icon"
+								></i
+							></a>
+							<a href="http://"
+								><i
+									class="fa-brands fa-youtube footer--icon"
+								></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__col-1">
+					<h4>About</h4>
+					<a href="#" class="footer--link">About Us</a>
+					<a href="#" class="footer--link">Delivery Information</a>
+					<a href="#" class="footer--link">Privacy Policy</a>
+					<a href="#" class="footer--link">Terms & Conditions</a>
+					<a href="#" class="footer--link">Contact Us</a>
+				</div>
+				<div class="footer__col-1">
+					<h4>My Account</h4>
+					<a href="#" class="footer--link">Sign In</a>
+					<a href="#" class="footer--link">View Cart</a>
+					<a href="#" class="footer--link">My Wishlist</a>
+					<a href="#" class="footer--link">Track My Order</a>
+					<a href="#" class="footer--link">Help</a>
+				</div>
+				<div class="footer__col-1">
+					<h4>Install App</h4>
+					<p>From App Store or Google Play</p>
+					<div class="footer__row">
+						<img
+							class="pay__img"
+							src="./images/pay/appstore.jpg"
+							alt="download from apple app store"
+						/>
+						<img
+							class="pay__img"
+							src="./images/pay/googleplay.jpg"
+							alt="download from google app store"
+						/>
+					</div>
+					<p>Secured Payment Gateways</p>
+					<img
+						class="pay__img"
+						src="./images/pay/pay.png"
+						alt="list of payment method icons"
+					/>
+				</div>
+			</div>
+			<div class="footer__copyright">
+				<p>&copy; 2023, HTML, CSS E-Commerce Site</p>
+			</div>
+		</footer>
 
 		<script src="app.js"></script>
 	</body>
