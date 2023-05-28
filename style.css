@@ -754,3 +754,20 @@ h2 {
 }
 
 }
+
+@media (max-width: 500px){
+.feature {
+    justify-content: center;
+}
+
+#banner-3 {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.banner__box--card{
+    width: 100%;
+}
+
+}
